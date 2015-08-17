@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Facebook Album Aggregator Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" media="all" href="style.css">
+    </head>
+    
+    <body>
+        <div id="sample"></div>
+    </body>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="../fb-album-aggregator.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('#sample').FBAlbumAggregator({
+                pageId: <replace-with-page-id>, // FB page ID
+                appId: <replace-with-app-id>, // FB app ID
+                appSecret: '<replace-with-app-secret>' // FB app secret
+            });
+        });
+    </script>
+
+</html>
