@@ -3,6 +3,8 @@ Facebook Album Aggregator
 
 A tiny jQuery plugin for fetching and displaying Facebook page albums and photos.
 
+**Big note:** The way this is currently set up with the exposure of the app secret on the client side is not exactly secure. So use this at your own risk. I'm working on changing the code to be able to pull public photos without having to authenticate a user with a login some other way.
+
 ## Features
 
 - List display of all albums a page owns (including thumbnail and title)
